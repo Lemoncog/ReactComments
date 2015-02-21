@@ -11,6 +11,14 @@
   </head>
   <body>
     <div id="content"></div>
-    <script type="text/jsx;harmony=true" src="scripts/example.js"></script>
-  </body>
+      <script type="text/jsx" src="components/commentbox.js"></script>
+      <script type="text/jsx" src="components/commentlist.js"></script>
+      <script type="text/jsx" src="components/commentform.js"></script>
+      <script type="text/jsx">
+        React.render(
+          <CommentBox />,
+          document.getElementById('content')
+        );
+      </script>
+     </body>
 </html>
